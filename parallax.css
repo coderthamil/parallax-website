@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container1
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed ;
+}
+
+.container2
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed ;
+}
+.container3
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed ;
+}
+
+p{
+    color:#2d302d;
+    font-family:'Times New Roman';
+    font-style: oblique;
+    background-image: -webkit-gradient(green,red);
+    
+}
+
+h1{
+    font-family:'teko' sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fa8e00;
+    text-align: center;
+    text-shadow: 10rem;
+    letter-spacing: 3px;
+    vertical-align: middle;
+    display: table-cell;
+    text-transform: uppercase;
+}
+h2{
+    font-family:'teko' sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(199, 202, 0);
+    text-align: center;
+    text-shadow: 5rem;
+    letter-spacing: 3px;
+    vertical-align: middle;
+    display: table-cell;
+    text-transform: uppercase;
+}
+
+ a{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d1d4ce;
+    background-color: #171616;
+    align-items: center;
+    border-color: #ff56ff;
+    place-items: center;
+    font: size 18px;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    
+    list-style: none;;
+    text-decoration:double;
+}
+a:hover{
+
+    font-family: 'Times New Roman';
+    background-color: #dedede;
+    color: #252525;
+    display: inline;
+    font-size :18px;
+    text-align: center;
+    text-decoration: double;
+    padding: 10px 15px;
+    margin: 10px 20px;
+
+}
+
+img {
+    image-orientation: flip;
+    --f: 0.1;
+    --r: 10px;
+
+    --_f: calc(100% * var(--f) / (1 + var(--f)));
+    --_a:calc(90deg * var(--f));
+
+    width:300px;
+    aspect-ratio:calc(1+var(--f));
+    object-fit: cover;
+    clip-path: insert(0 var(--f) 0 0 
+       round var(--r));
+     transform: perspective(400px)
+         var(--_t, rotateY(VAR(--_a)));
+    transition: 0.5s;
+    cursor: pointer;
+}
+ img:hover {
+    clip-path: insert(0 0 0 var(--f)  round var(--r));
+    --_t: translateX(calc( -1 * var(--_f)))
+        rotateY(calc(-1 * var(--_a)));1 
+}
+
+header {
+    background-size:cover;
+    padding: 10px 15px;
+    margin: 10px 25px ;
+    background-color: #171616;
+    height: 20pt;
+}
+body
+{
+    background-color: #171616;
+}
+
+
+ ul{
+    float: right;
+}
+ li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+ 
